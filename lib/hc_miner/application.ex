@@ -10,6 +10,7 @@ defmodule HcMiner.Application do
     children = [
       # Starts a worker by calling: HcMiner.Worker.start_link(arg)
       # {HcMiner.Worker, arg}
+      HcMiner.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

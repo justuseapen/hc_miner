@@ -22,7 +22,6 @@ defmodule HcMiner.CouncilIndexScraper do
           agenda_url: extract_agenda_url(row)
         }
       end)
-      |> IO.inspect()
   end
 
   defp extract_video_url(row) do

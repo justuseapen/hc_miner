@@ -22,8 +22,10 @@ defmodule HcMiner.MixProject do
   defp deps do
     [
       {:crawly, "~> 0.16.0"},
+      {:ecto_sql, "~> 3.2"},
       {:floki, "~> 0.35.0"},
       {:jason, "~> 1.2"},
+      {:postgrex, "~> 0.15"},
       {:timex, "~> 3.7"}
     ]
   end

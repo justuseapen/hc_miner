@@ -3,12 +3,15 @@ defmodule HcMiner.MeetingDetailScraper do
   Given a URL to a meeting detail page, scrape the page for the meeting details
   """
   @example_url "https://harfordcountymd.new.swagit.com/videos/291838"
+  @base_url "https://harfordcountymd.new.swagit.com"
 
   def run() do
     run(@example_url)
   end
 
-  def run(url) do
+  def run(path) do
+    url = @base_url <> path
+
     %{
       transcript: transcript(url),
       agenda_pdf_url: agenda_pdf_url(url)
